@@ -5,12 +5,14 @@
 </template>
 <script>
 import Layout from './components/Layout';
+import store from './vuex/store';
 
 export default {
     name: 'app',
     components: {
         Layout,
     },
+    store,
 };
 </script>
 <style lang='less'>

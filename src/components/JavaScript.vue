@@ -1,7 +1,9 @@
 <template>
     <div class="jjscripts">
-        <ul >
-            <li></li>
+        <ul>
+            <li>
+                <div v-bind:class='{filtercss}'></div>
+            </li>
         </ul>
     </div>
 </template>
@@ -24,6 +26,7 @@ export default {
     data() {
         return {
             jsapi: getJsApi(),
+            filtercss: 'f1f',
         };
     },
     mounted() {

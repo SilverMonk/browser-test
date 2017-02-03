@@ -1,11 +1,18 @@
 <template>
     <div class='sys-menu'>
         <el-menu mode="horizontal" default-active="1">
+            <el-menu-item index='0'>
+                <router-link to="./test">Test</router-link>
+            </el-menu-item>
             <el-menu-item index='1'>
                 <router-link to="./screen">屏幕尺寸</router-link>
             </el-menu-item>
-            <el-menu-item index='2'>JS</el-menu-item>
-            <el-menu-item index='3'>CSS</el-menu-item>
+            <el-menu-item index='2'>
+                <router-link to="./jsapi">JS</router-link>
+            </el-menu-item>
+            <el-menu-item index='3'>
+                <router-link to="./effect">Effect</router-link>
+            </el-menu-item>
             <el-menu-item index='4'>
                 <router-link to="./video">视频</router-link>
             </el-menu-item>
@@ -16,8 +23,7 @@
 export default {
     name: 'sysMenu',
     data() {
-        return {
-        };
+        return {};
     },
 };
 </script>

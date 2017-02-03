@@ -9,6 +9,8 @@ import Hello from './components/Hello';
 import Screen from './components/Screen';
 import Video from './components/Video';
 import JavaScript from './components/JavaScript';
+import Effect from './components/Effect';
+import Test from './components/Test';
 // 开启debug模式
 Vue.config.debug = true;
 Vue.use(ElementUI);
@@ -23,6 +25,9 @@ const router = new VueRouter({
         path: '/',
         component: Hello,
     }, {
+        path: '/test',
+        component: Test,
+    }, {
         path: '/screen',
         component: Screen,
     }, {
@@ -31,6 +36,9 @@ const router = new VueRouter({
     }, {
         path: '/jsapi',
         component: JavaScript,
+    }, {
+        path: '/effect',
+        component: Effect,
     }],
 });
 
